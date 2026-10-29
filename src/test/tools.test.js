@@ -396,7 +396,7 @@ test("system prompt teaches the constraints and stays a sensible size", () => {
 	assert.ok(P.QUICK_PROMPTS.length >= 6);
 });
 
-test("no network access in the shipped app, except the host's requests to Anthropic", () => {
+test("no network access in the shipped app, except Anthropic (the assistant) and Christian Cloud", () => {
 	const bad = [];
 	const scan = (dir) => {
 		for (const f of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -404,9 +404,10 @@ test("no network access in the shipped app, except the host's requests to Anthro
 			if (f.isDirectory()) { scan(p); continue; }
 			if (!/\.(js|html|css)$/.test(f.name) || /vendor/.test(p)) continue;
 			// the host talks to api.anthropic.com (only with the person's key) and registers the offline cache; sw.js is that cache
-			if (/brand[\/\\]cs-host\.js$|[\/\\]sw\.js$/.test(p)) {
+			// Christian Cloud: the connector reaches only cloud.christiansystems.org, with the person's own device key
+			if (/brand[\/\\](cs-host|cs-cloud|cs-cloud-ui)\.js$|[\/\\]sw\.js$/.test(p)) {
 				const hosts = [...fs.readFileSync(p, "utf8").matchAll(/https:\/\/([a-z0-9.-]+)/g)].map((m) => m[1]);
-				assert.deepEqual([...new Set(hosts)].filter((h) => h !== "api.anthropic.com"), [], p);
+				assert.deepEqual([...new Set(hosts)].filter((h) => h !== "api.anthropic.com" && h !== "cloud.christiansystems.org"), [], p);
 				continue;
 			}
 			const text = fs.readFileSync(p, "utf8");
