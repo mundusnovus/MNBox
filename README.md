@@ -24,6 +24,11 @@ Windows or Linux.
 - **Easier to use.** Light and dark themes in Christian Systems colours, the Chancel typeface, and a layout
   that works on phones and tablets.
 
+## Ask your agent
+
+An AI agent that can run code (Claude in Cowork, ChatGPT in agent mode or Codex) can make things with this app from
+the command line. Point it at this repository and ask it to read [AGENTS.md](AGENTS.md).
+
 ## Run it from source
 
 It is plain HTML and JavaScript; there is nothing to build. Serve `src/app/` with any web server:

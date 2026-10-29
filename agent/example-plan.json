@@ -1,0 +1,15 @@
+{
+  "name": "first-riff",
+  "steps": [
+    { "tool": "new_song", "input": { "layout": "standard", "key": "E", "scale": "minor", "tempo": 164, "bars": 8 } },
+    { "tool": "set_instrument", "input": { "channel": 1, "preset": "overdrive guitar" } },
+    { "tool": "set_instrument", "input": { "channel": 2, "preset": "distortion guitar", "settings": { "chord": "simultaneous" } } },
+    { "tool": "set_instrument", "input": { "channel": 3, "preset": "picked bass" } },
+    { "tool": "set_instrument", "input": { "channel": 4, "preset": "rock kit" } },
+    { "tool": "generate_part", "input": { "channel": 2, "kind": "power", "progression": "i VI III VII", "style": "gallop", "bars": 8 } },
+    { "tool": "generate_part", "input": { "channel": 3, "kind": "bass", "progression": "i VI III VII", "style": "octaves", "bars": 8 } },
+    { "tool": "write_track", "input": { "channel": 1, "start_bar": 1, "bars": 4, "notes": "E5@0+1 G5@1+1 B5@2+1.5 A5@3.5+0.5 G5@4+2 E5@6+2 C5@8+1 E5@9+1 G5@10+2 D5@12+2 F#5@14+2" } },
+    { "tool": "generate_part", "input": { "channel": 4, "kind": "drums", "template": "rock backbeat", "bars": 8, "fill_every": 4 } },
+    { "tool": "auto_mix", "input": { "max_seconds": 30 } }
+  ]
+}
