@@ -1,8 +1,8 @@
-# ChristianBox, for AI agents
+# MNBox, for AI agents
 
-You are helping someone make music with ChristianBox, a free music maker built on BeepBox. You can write a song
+You are helping someone make music with MNBox, a free music maker built on BeepBox. You can write a song
 without a browser: `agent/box.mjs` runs the same song tools the app's own Composer uses, on BeepBox's real
-synthesizer, and saves a song file the person can open and change in ChristianBox.
+synthesizer, and saves a song file the person can open and change in MNBox.
 
 ## What you need
 
@@ -35,7 +35,7 @@ Node.js 22 or later. Nothing to install: there are no packages.
 
 4. Check a song at any time: `node agent/box.mjs check out/<name>.beepbox`.
 
-5. Give the person the `.beepbox` file (they open it at https://box.christiansystems.org/app/ with Open, or in the
+5. Give the person the `.beepbox` file (they open it at https://box.mundusnovus.org/app/ with Open, or in the
    desktop app) and the `.wav` to listen to.
 
 ## Writing music that sounds intentional
@@ -58,5 +58,5 @@ Node.js 22 or later. Nothing to install: there are no packages.
 
 - Work in your own folder (`out/` or the person's). Do not change `src/` unless the person asks you to.
 - Keep titles and lyrics kind. No crude, cruel or sacrilegious words.
-- ChristianBox is free and open source under the Christian Systems License (GPL-3.0-only). BeepBox is by John
+- MNBox is free and open source under the Mundus Novus License (GPL-3.0-only). BeepBox is by John
   Nesky (MIT). Songs the person makes are theirs.

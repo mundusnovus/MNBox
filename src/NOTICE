@@ -1,19 +1,19 @@
-ChristianBox, from Christian Systems
+MNBox, from Mundus Novus
 ====================================
-ChristianBox is a free music maker built on BeepBox, with a Composer that writes music with you.
-Christian Systems' own work is under the Christian Systems License 1.0 (GPL-3.0-only); see LICENSE and LICENSING.md.
+MNBox is a free music maker built on BeepBox, with a Composer that writes music with you.
+Mundus Novus' own work is under the Mundus Novus License 1.0 (GPL-3.0-only); see LICENSE and LICENSING.md.
 It grew out of Vigil Box (VigilTech, GPL-3.0-only), which grew out of AmerikaBox.
 
 BeepBox
   Copyright (c) 2012-2024 John Nesky and contributing authors
   Licence: MIT (full text in src/LICENSE-BeepBox.md)
   Source: https://github.com/johnnesky/beepbox, commit 355e510099d230d066d95074c16d748d59fe054c (version 4.2.2 plus later fixes)
-  ChristianBox is not affiliated with, or endorsed by, BeepBox or John Nesky. beepbox.co is a separate hosted service.
+  MNBox is not affiliated with, or endorsed by, BeepBox or John Nesky. beepbox.co is a separate hosted service.
   Our changes to BeepBox's own code are the patches in src/patches/, plus one path change (the MP3 encoder loads from box/vendor/).
 
 lamejs 1.2.0 (MP3 encoder, a JavaScript port of LAME)
   Licence: LGPL-3.0, shipped as a separate unmodified file app/box/vendor/lame.min.js
   (licence note: app/box/vendor/LICENSE-lamejs.txt). LAME: https://lame.sourceforge.io / www.mp3dev.org
 
-Christian Systems additions (app/box/*, brand/, packaging): Christian Systems License 1.0 (GPL-3.0-only).
+Mundus Novus additions (app/box/*, brand/, packaging): Mundus Novus License 1.0 (GPL-3.0-only).
 Earlier VigilTech additions: Copyright VigilTech, GPL-3.0-only.

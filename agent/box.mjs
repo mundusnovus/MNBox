@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-// ChristianBox for agents: the same song tools the Composer uses, run from the command line with Node 22+, on
+// MNBox for agents: the same song tools the Composer uses, run from the command line with Node 22+, on
 // BeepBox's real synthesizer.
 //   node agent/box.mjs tools                     list every tool with its input schema (JSON)
-//   node agent/box.mjs run plan.json [out-dir]   run a plan; save the song (.beepbox, opens in ChristianBox) and a WAV
+//   node agent/box.mjs run plan.json [out-dir]   run a plan; save the song (.beepbox, opens in MNBox) and a WAV
 //   node agent/box.mjs check song.beepbox        loudness, balance and advice for a saved song
 // A plan: { "name": "anthem", "open": "earlier.beepbox", "wav": true,
 //           "steps": [ { "tool": "new_song", "input": { ... } }, ... ] }
