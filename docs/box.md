@@ -1,4 +1,4 @@
-# MNBox for developers
+# Asteria Box for developers
 
 ## Layout
 
@@ -8,7 +8,7 @@ src/
     index.html              the page; data-app="box" tells the host which app it is
     beepbox_editor.min.js   BeepBox's editor, built from the pinned commit with our patches
     beepbox_synth.min.js    BeepBox's synth on its own, for tests
-    brand/                  Mundus Novus tokens, mn-app.css, mn-host.js, the Chancel font
+    brand/                  Asteria Technology tokens, as-app.css, as-host.js, the Asteria Pixel font
     box/                    our layer (below)
     manifest.webmanifest, sw.js, icons
   patches/                  our changes to BeepBox's source
@@ -31,7 +31,7 @@ src/
 | `presets-band.js` | The band and industrial instruments |
 | `audio.js` | Offline rendering, WAV, analysis |
 | `export.js` | The game bundle: a seamless loop with its metadata |
-| `theme.js` | The Mundus Novus colour theme for BeepBox |
+| `theme.js` | The Asteria Technology colour theme for BeepBox |
 | `rpc.js` | Lets a desktop shell drive the app |
 
 ## Two hooks into BeepBox

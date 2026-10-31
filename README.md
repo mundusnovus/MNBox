@@ -1,12 +1,12 @@
-# MNBox
+# Asteria Box
 
 <img src="src/icons/box-1024.png" alt="" width="96">
 
-A free music maker from **Mundus Novus**, built on [BeepBox](https://github.com/johnnesky/beepbox).
+A free music maker from **Asteria Technology**, built on [BeepBox](https://github.com/johnnesky/beepbox).
 Write chiptune or a full band: distorted guitars, bass, organ, strings, choir and a real drum kit.
 The **Composer** writes and changes music with you, and every change can be undone.
 
-Use it at **mundusnovus.org/box**, install it from there as an app, or download it for macOS,
+Use it at **asteria.technology/box**, install it from there as an app, or download it for macOS,
 Windows or Linux.
 
 ## What is new since Vigil Box
@@ -21,7 +21,7 @@ Windows or Linux.
   Autosave stays on your device.
 - **Your key, your device.** The Composer uses your own Anthropic key. It is stored only on your device
   and sent only to Anthropic.
-- **Easier to use.** Light and dark themes in Mundus Novus colours, the Chancel typeface, and a layout
+- **Easier to use.** Light and dark themes in Asteria Technology colours, the Asteria Pixel typeface, and a layout
   that works on phones and tablets.
 
 ## Ask your agent
@@ -41,6 +41,6 @@ Then open http://localhost:8000. Details for developers are in [docs/box.md](doc
 
 ## License
 
-Free and open source under the **Mundus Novus License 1.0** (GPL-3.0-only); see
-[LICENSING.md](LICENSING.md). BeepBox is by John Nesky and contributors (MIT), and MNBox is not
+Free and open source under the **Asteria License 1.0** (GPL-3.0-only); see
+[LICENSING.md](LICENSING.md). BeepBox is by John Nesky and contributors (MIT), and Asteria Box is not
 affiliated with it. The MP3 encoder, lamejs, is under the LGPL. Full notices are in [src/NOTICE](src/NOTICE).
